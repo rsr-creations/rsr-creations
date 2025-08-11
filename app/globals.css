@@ -9,7 +9,7 @@
   --light2: #f0f0f0;
   --less-light: #f5f5f5c0;
 
-  font-size: 40%;
+  font-size: xx-small;
 }
 
 @theme inline {
@@ -27,6 +27,18 @@
   --font-mono: var(--font-geist-mono); */
   --font-montserrat: var(--montserrat);
   --font-open-sans: var(--open-sans);
+}
+
+@media (min-width: 540px) {
+  :root {
+    font-size: small;
+  }
+}
+
+@media (min-width: 1680px) {
+  :root {
+    font-size: medium;
+  }
 }
 
 body {
@@ -50,7 +62,7 @@ h4 {
 }
 
 h5 {
-  @apply text-4xl font-semibold tracking-tighter font-montserrat;
+  @apply text-4xl font-bold tracking-tighter font-mono;
 }
 
 p {
@@ -63,6 +75,10 @@ p {
 
 .dark-section {
   @apply text-light;
+
+  .button {
+    @apply border-2 border-light  hover:text-dark hover:bg-less-light hover:border-less-light;
+  }
 }
 
 .light-section {
@@ -70,10 +86,14 @@ p {
   p {
     @apply text-less-dark;
   }
+
+  .button {
+    @apply bg-dark text-light hover:text-less-light;
+  }
 }
 
 .button {
-  @apply border-2 border-primary text-3xl font-semibold py-4 px-8 rounded w-fit hover:text-dark hover:bg-primary-hover hover:border-primary-hover hover:cursor-pointer transition-all;
+  @apply text-2xl font-semibold py-4 px-8 rounded w-fit hover:cursor-pointer transition-all;
 }
 
 .card1 {

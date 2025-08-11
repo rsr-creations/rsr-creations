@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <section className="dark-section bg-[url(/photography.jpg)] bg-cover bg-no-repeat bg-fixed bg-center w-full">
-        <div className="min-h-200 bg-dark/80 py-40 px-20 flex flex-col gap-12">
+        <div className="min-h-200 bg-dark/80 py-40 sm:py-84 px-20 flex flex-col gap-12">
           <h1>Lorem ipsum dolor sit amet consectetur</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -36,11 +36,47 @@ export default function Home() {
           dolorum quas eaque maiores aliquid, ab ea esse. Voluptatibus magnam
           consequuntur sapiente minima!
         </p>
+        <div className="flex gap-4">
+          <div className="flex flex-col justify-center gap-4">
+            <Image
+              src={"/gallery/gallery4.jpg"}
+              width={5000}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery3.jpg"}
+              width={5000}
+              height={500}
+              alt="image"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/gallery/gallery1.jpg"}
+              width={5000}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery2.jpg"}
+              width={5000}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery5.jpg"}
+              width={5000}
+              height={500}
+              alt="image"
+            />
+          </div>
+        </div>
       </section>
       <section className="light-section bg-light section">
-        <h5 className="text-blue-700">What we can do for you</h5>
+        <h5 className="text-amber-400">What we can do for you</h5>
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <div className="mt-24 grid gap-32">
+        <div className="grid">
           <FeatureBlock
             number="1"
             title="Photography and videography"
@@ -52,7 +88,16 @@ export default function Home() {
           </FeatureBlock>
           <FeatureBlock
             number="1"
-            title="Podcast and Talk show assistance"
+            title="Logo and Graphic design"
+            src="/graphicdesign.jpg"
+            reverse={false}
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum
+            repudiandae tempore tenetur
+          </FeatureBlock>
+          <FeatureBlock
+            number="1"
+            title="Podcast and Talk show production"
             src="/microphone.jpg"
             reverse={false}
           >
@@ -68,38 +113,65 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum
             repudiandae tempore tenetur
           </FeatureBlock>
+          <div className="flex flex-row gap-6">
+            <a href="" className="button">
+              Get in touch
+            </a>
+            <a href="" className="button">
+              Lorem ipsum
+            </a>
+          </div>
         </div>
       </section>
-      <section className="dark-section bg-green-600 section">
-        <h5 className="text-light/90">Heres what others think of us</h5>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.,
-          rem.
-        </h2>
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Doloribus illum sed
-          possimus, temporibus beatae esse nemo ullam dicta deleniti
-          exercitationem ipsam? Exercitationem ipsam eius magni corporis, iusto
-          ex quisquam maiores adipisci qui accusantium est quod, cupiditate
-          nobis nam debitis beatae.
-        </p>
+      <section className="light-section bg-less-light section">
+        <h5 className="text-blue-500">Our portfolio:</h5>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <div className="flex gap-4 my-12">
+          <div className="flex flex-col justify-center gap-4">
+            <Image
+              src={"/gallery/gallery4.jpg"}
+              width={500}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery3.jpg"}
+              width={500}
+              height={500}
+              alt="image"
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src={"/gallery/gallery1.jpg"}
+              width={500}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery2.jpg"}
+              width={500}
+              height={500}
+              alt="image"
+            />
+            <Image
+              src={"/gallery/gallery5.jpg"}
+              width={500}
+              height={500}
+              alt="image"
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-12">
           <div className="card"></div>
         </div>
       </section>
-      <section className="dark-section bg-amber-500 section">
-        <h5 className="text-light/90">Get in touch with us</h5>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis.,
-          rem.
-        </h2>
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          explicabo sapiente exercitationem in vero repudiandae corporis eius
-          dolorum quas eaque maiores aliquid, ab ea esse. Voluptatibus magnam
-          consequuntur sapiente minima!
-        </p>
+      <section className="dark-section bg-dark min-h-100 section">
+        <h5 className="text-green-500">Get in touch with us</h5>
+        <div className="">
+          <p className="">Number: +880 1936 609 937</p>{" "}
+          <p>Email: rsrcreations@gmail.com</p>
+        </div>
       </section>
     </>
   );

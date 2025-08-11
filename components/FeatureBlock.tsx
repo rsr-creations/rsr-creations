@@ -20,7 +20,7 @@ export default function FeatureBlock({
   }
   return (
     <div
-      className={`flex flex-col items-start justify-between gap-8 ${classes}`}
+      className={`flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8 my-16 ${classes}`}
     >
       <div className="md:max-w-1/2 md:p-4">
         <Image
