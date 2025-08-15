@@ -28,8 +28,8 @@ export default function Home() {
       <section className="light-section bg-light2 section">
         <h5 className="text-red-600">Who Are We?</h5>
         <h2>
-          RSR Creations is an up and coming, professional production company
-          located in Dhaka.
+          RSR Creations is an up-and-coming, professional content production
+          company located in Dhaka.
         </h2>
         <p className="mb-4">
           As a newly established production based company, we create content
