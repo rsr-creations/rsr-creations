@@ -27,7 +27,7 @@ export default function FeatureBlock({
           src={src}
           alt="Feature 2"
           width={1000}
-          height={1000}
+          height={500}
           className="rounded-md"
         />
       </div>
