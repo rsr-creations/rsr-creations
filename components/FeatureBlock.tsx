@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 
 export default function FeatureBlock({
   number,
