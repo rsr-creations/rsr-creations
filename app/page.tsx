@@ -4,20 +4,34 @@ import FeatureBlock from "@/components/FeatureBlock";
 export default function Home() {
   return (
     <>
-      <section className="dark-section bg-[url(/photography.jpg)] bg-cover bg-no-repeat bg-fixed bg-center w-full">
-        <div className="min-h-200 lg:min-h-screen bg-dark/80 flex flex-col section justify-center">
-          <div className="flex flex-col gap-8 py-40 max-w-4xl">
-            <h1>You hire and we create, catering to your needs.</h1>
+      <section
+        id="home"
+        className="dark-section bg-[url(/photography.jpg)] bg-cover bg-no-repeat bg-fixed bg-center w-full"
+      >
+        <div className="min-h-200 lg:min-h-screen bg-dark/80 py-24 pt-40 lg:py-64 flex flex-col md:flex-row items-center justify-center px-12 gap-24">
+          <div className="max-w-96 md:max-w-sm">
+            <Image
+              src={"/logos/logo-nobg.png"}
+              width={500}
+              height={500}
+              alt="logo"
+            />
+          </div>
+          <div className="flex flex-col gap-8 md:max-w-1/2 lg:max-w-3xl">
+            <h1>
+              You hire and we <span className="text-blue-600"> create</span>,
+              catering to your needs.
+            </h1>
             <p>
               We are a production company based in Niketan, Dhaka. We create,
               film and produce content with your own personal touch as a top
               priority.
             </p>
             <div className="flex gap-8">
-              <a href="" className="button bg-primary text-dark">
+              <a href="#about" className="button bg-primary text-dark">
                 More info
               </a>
-              <a href="" className="button">
+              <a href="#contact" className="button">
                 Contact us
               </a>
             </div>
@@ -27,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="light-section bg-light2 section">
+      <section id="about" className="light-section bg-light2 section">
         <div className="container">
           <h5 className="text-red-600">Who Are We?</h5>
           <h2>
@@ -46,8 +60,8 @@ export default function Home() {
         <div className="container">
           <h5 className="text-amber-400">What we can do for you</h5>
           <h2>
-            With your direction and personal touch in mind; We manage and direct
-            the content you desire with your vision as a top priority.
+            We manage and direct the content you desire with your vision as a
+            top priority. Our services include:
           </h2>
           <div className="grid">
             <FeatureBlock
@@ -91,17 +105,17 @@ export default function Home() {
               design we used to develop this page.
             </FeatureBlock>
             <div className="flex flex-row gap-6">
-              <a href="" className="button">
+              <a href="#contact" className="button">
                 Get in touch
               </a>
-              <a href="" className="button">
+              <a href="#portfolio" className="button">
                 View our portfolio
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section className="light-section bg-less-light section">
+      <section id="portfolio" className="light-section bg-less-light section">
         <div className="container">
           <h5 className="text-blue-500">Our portfolio:</h5>
           <h2>Still not convinced? Check out our work.</h2>
@@ -152,7 +166,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="dark-section bg-dark min-h-100 section">
+      <section id="contact" className="dark-section bg-dark min-h-100 section">
         <div className="container">
           <h5 className="text-green-500">Get in touch with us</h5>
           <div className="grid gap-1">

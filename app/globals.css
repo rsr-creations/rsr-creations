@@ -10,6 +10,7 @@
   --less-light: #f5f5f5c0;
 
   font-size: xx-small;
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -35,18 +36,30 @@
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 2160px) {
   :root {
-    font-size: small;
+    font-size: medium;
   }
 }
+/* 
+@media (min-width: 2160px) {
+  :root {
+    font-size: large;
+  }
+}
+
+@media (min-width: 3000px) {
+  :root {
+    font-size: x-large;
+  }
+} */
 
 body {
   @apply text-dark font-open-sans;
 }
 
 h1 {
-  @apply text-7xl font-bold tracking-tighter font-montserrat;
+  @apply text-7xl font-semibold tracking-tighter font-montserrat;
 }
 
 h2 {
@@ -81,7 +94,7 @@ p {
   @apply text-light;
 
   .button {
-    @apply border-2 border-light  hover:text-dark hover:bg-less-light hover:border-less-light;
+    @apply border-2 border-light  hover:text-dark hover:bg-light hover:text-dark/80;
   }
 }
 
