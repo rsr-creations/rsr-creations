@@ -25,14 +25,35 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <html lang="en">
+        <head></head>
         <body
-          className={`${montserrat.variable} ${openSans.variable} antialiased`}
+        // className={`${montserrat.variable} ${openSans.variable} antialiased`}
         >
           {children}
         </body>
       </html>
+      <footer id="contact" className="dark-section bg-dark min-h-100 section">
+        <div className="container">
+          <h5 className="text-green-500">Get in touch with us</h5>
+          <div className="grid gap-1">
+            <p className="">Number: +880 1936 609 937</p>{" "}
+            <p>
+              Email: <span>rsrcreations@gmail.com</span>{" "}
+            </p>
+            <p>
+              Our Facebook page:{" "}
+              <a
+                href="https://www.facebook.com/profile.php?id=61578550110498"
+                className="text-blue-500 hover:underline"
+              >
+                RSR Creations
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

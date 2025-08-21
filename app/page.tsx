@@ -3,7 +3,7 @@ import FeatureBlock from "@/components/FeatureBlock";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <section
         id="home"
         className="dark-section bg-[url(/photography.jpg)] bg-cover bg-no-repeat bg-fixed bg-center w-full"
@@ -58,7 +58,7 @@ export default function Home() {
       </section>
       <section className="light-section bg-light section">
         <div className="container">
-          <h5 className="text-amber-400">What we can do for you</h5>
+          <h5 className="text-amber-500">What we can do for you</h5>
           <h2>
             We manage and direct the content you desire with your vision as a
             top priority. Our services include:
@@ -104,37 +104,38 @@ export default function Home() {
               capabilities. From the formatting and layout to the styling and
               design we used to develop this page.
             </FeatureBlock>
-            <div className="flex flex-row gap-6">
+            {/* <div className="flex flex-row gap-6">
               <a href="#contact" className="button">
                 Get in touch
               </a>
               <a href="#portfolio" className="button">
                 View our portfolio
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
-      <section id="portfolio" className="light-section bg-less-light section">
+      <section id="portfolio" className="dark-section bg-dark/95 section">
         <div className="container">
           <h5 className="text-blue-500">Our portfolio:</h5>
           <h2>Still not convinced? Check out our work.</h2>
           <div className="flex flex-col items-center sm:flex-row gap-4 my-12">
             <div className="flex flex-col justify-center gap-4">
               <Image
-                src={"/gallery/gallery4.jpeg"}
+                src={"/gallery/gallery7.jpeg"}
+                width={500}
+                height={500}
+                alt="image"
+              />
+
+              <Image
+                src={"/gallery/gallery10.jpeg"}
                 width={500}
                 height={500}
                 alt="image"
               />
               <Image
-                src={"/gallery/gallery3.jpeg"}
-                width={500}
-                height={500}
-                alt="image"
-              />
-              <Image
-                src={"/gallery/gallery6.jpeg"}
+                src={"/gallery/gallery9.jpeg"}
                 width={500}
                 height={500}
                 alt="image"
@@ -148,7 +149,7 @@ export default function Home() {
                 alt="image"
               />
               <Image
-                src={"/gallery/gallery2.jpeg"}
+                src={"/gallery/gallery8.jpeg"}
                 width={500}
                 height={500}
                 alt="image"
@@ -166,26 +167,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contact" className="dark-section bg-dark min-h-100 section">
-        <div className="container">
-          <h5 className="text-green-500">Get in touch with us</h5>
-          <div className="grid gap-1">
-            <p className="">Number: +880 1936 609 937</p>{" "}
-            <p>
-              Email: <span>rsrcreations@gmail.com</span>{" "}
-            </p>
-            <p>
-              Our Facebook page:{" "}
-              <a
-                href="https://www.facebook.com/profile.php?id=61578550110498"
-                className="text-blue-500 hover:underline"
-              >
-                RSR Creations
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </>
+    </main>
   );
 }

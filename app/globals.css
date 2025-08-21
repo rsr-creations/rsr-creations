@@ -75,7 +75,7 @@ h4 {
 }
 
 h5 {
-  @apply text-4xl font-bold tracking-tighter font-mono;
+  @apply text-4xl font-light tracking-tighter font-montserrat;
 }
 
 p {
