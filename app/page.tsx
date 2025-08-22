@@ -8,8 +8,8 @@ export default function Home() {
         id="home"
         className="dark-section bg-[url(/photography.jpg)] bg-cover bg-no-repeat bg-fixed bg-center w-full"
       >
-        <div className="min-h-200 lg:min-h-screen bg-dark/80 py-24 pt-40 lg:py-64 flex flex-col md:flex-row items-center justify-center px-12 gap-24">
-          <div className="max-w-96 md:max-w-sm">
+        <div className="min-h-200 lg:min-h-screen bg-dark/80 py-24 md:pt-40 lg:py-64 flex flex-col md:flex-row items-center justify-center px-12 gap-8 lg:gap-24">
+          <div className="max-w-100 md:max-w-sm">
             <Image
               src={"/logos/logo-nobg.png"}
               width={500}
@@ -17,16 +17,18 @@ export default function Home() {
               alt="logo"
             />
           </div>
-          <div className="flex flex-col gap-8 md:max-w-1/2 lg:max-w-3xl">
-            <h1>
-              You hire and we <span className="text-blue-600"> create</span>,
-              catering to your needs.
-            </h1>
-            <p>
-              We are a production company based in Niketan, Dhaka. We create,
-              film and produce content with your own personal touch as a top
-              priority.
-            </p>
+          <div className="flex flex-col gap-8 mxa-w-xl sm:max-w-3xl  lg:max-w-3xl">
+            <article className="container">
+              <h1 className="">
+                You hire and we <span className="text-blue-600"> create</span>,
+                catering to all your needs
+              </h1>
+              <p>
+                We are a production company based in Niketan, Dhaka. We create,
+                film and produce content with your own personal touch as a top
+                priority.
+              </p>
+            </article>
             <div className="flex gap-8">
               <a href="#about" className="button bg-primary text-dark">
                 More info
@@ -42,19 +44,19 @@ export default function Home() {
         </div>
       </section>
       <section id="about" className="light-section bg-light2 section">
-        <div className="container">
+        <article className="container">
           <h5 className="text-red-600">Who Are We?</h5>
           <h2>
-            RSR Creations is an up-and-coming, professional content production
-            company located in Dhaka.
+            RSR Creations is a professional content production company based in
+            Dhaka.
           </h2>
           <p className="mb-4">
-            As an up and coming production based company, we create content
+            As an up-and-coming production based company, we create content
             based on your direction and preferences. From photography to
             videography, to web design to logo and graphic design and of course;
-            a podcast and talk show production right here in Dhaka.
+            podcast and talk show production right here in Dhaka.
           </p>
-        </div>
+        </article>
       </section>
       <section className="light-section bg-light section">
         <div className="container">
@@ -71,8 +73,8 @@ export default function Home() {
               reverse={false}
             >
               From photography and photo-editing to videography and
-              video-editing. With cutting-edge equipment, we film and edit your
-              content directly catering to your needs.
+              video-editing. With cutting-edge equipment, we shoot, film, and
+              edit your content directly catering to your needs.
             </FeatureBlock>
             <FeatureBlock
               number="1"
@@ -80,9 +82,9 @@ export default function Home() {
               src="/graphicdesign.jpg"
               reverse={false}
             >
-              You can order your own graphical design with colours and taste in
-              mind along with alterations of your own choosing. We keep colour
-              theory in mind with our graphical work.
+              Customize your graphic design with preferred colors and styles,
+              including unlimited revisions. Our work maintains modern design
+              conventions for optimal results.
             </FeatureBlock>
             <FeatureBlock
               number="1"
